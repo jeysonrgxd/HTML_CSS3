@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		box-sizing: border-box;
+		height: 100vh;
+		padding: 0;
+		margin: 0;
+		width: 100vw;
+		background: url(http://www.stickpng.com/assets/images/580b585b2edbce24c47b2735.png),linear-gradient(#fff, #4D9DDC);
+		background-position: bottom left;
+		animation: fondo 1s infinite linear forwards;
+
+	}
+	.container{
+		position: absolute;
+		width: 250px;
+		height: 300px;
+		left: 50%;
+		bottom: 0%;
+		transform: translateX(-50%);
+		background:linear-gradient(#60BCED,#4D9DDC);
+		transition: transform .6s;
+		border-top:2px solid black;
+	}
+	.container:hover{
+		transform: translateX(-50%) scale(2);
+
+	}
+	.container:before{
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: -54.8px;
+		border:2px solid #575B63;
+		background-color: #93CCEE;
+		animation:cuadroleft 1s infinite linear;
+		transform-origin: bottom right;
+	}
+		.container:after{
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: -54.8px;
+		right: 0;
+		border:2px solid #575B63;
+		background-color: #93CCEE;
+		animation:cuadroright 1s .5s infinite linear;
+		transform-origin: bottom left;
+	}
+@keyframes fondo{
+	from{
+		background-position: bottom left;
+		
+
+	}
+
+	to{
+		background-position: top left;
+
+	}
+
+}
+@keyframes cuadroleft{
+	from{
+		transform: rotate(0deg) ;
+	}
+	50%{
+		transform: rotate(90deg);		
+	}
+	to{
+		transform: translateX(-50px) rotate(90deg);	
+	}
+		
+}
+
+@keyframes cuadroright{
+	from{
+		transform: rotate(0deg) ;
+	}
+	50%{
+		transform: rotate(-90deg);		
+	}
+	to{
+		transform: translateX(50px) rotate(-90deg);	
+	}
+}
+</style>
+<body>
+	<div class="container">
+		
+	</div>
+</body>
+</html>

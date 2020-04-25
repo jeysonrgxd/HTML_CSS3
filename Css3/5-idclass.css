@@ -1,0 +1,28 @@
+header p{
+	/*rojo*/
+	  color:#FE3030;
+	font-size: 20px;
+}
+header h2{
+	color:red;
+
+}
+
+p{
+	/*medio amarillo*/
+	color: #BAA73F;
+}
+
+p.todos{
+ color:brown
+
+}
+
+p#azul{
+	color:blue;
+
+}
+
+p.verde{
+	color: green;
+}

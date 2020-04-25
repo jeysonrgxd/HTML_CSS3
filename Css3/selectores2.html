@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background: GAINSBORO;
+        }
+        :root{
+         --color_primer:green;
+        --color_segundo:brown;
+        }
+        .primer{
+            color:var(--color_primer);
+        }
+        .segundo{
+            color:var(--color_segundo);
+        }
+        /* "+" representa el que esta justo debajo de la clase o etiqueta nombrada, ose h1 que despues asu costado este strong a ese strong le ases lo que indica       */
+        .primer+strong{
+            color: var(--color_primer);
+        }
+        .segundo+strong{
+            color:var(--color_segundo);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="primer">titulo1</h1>
+    <strong>soy subtitulo1</strong>
+    <h1 class="segundo">titulo2</h1>
+    <strong>soy subtitulo2</strong>
+</body>
+</html>

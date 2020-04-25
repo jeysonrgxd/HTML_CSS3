@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		:root{
+			--color:#6179DD
+		}
+		body{
+			background-color: #1D1F21;
+		}
+		div{
+			width: 600px;
+			height: 400px;
+			border: 2px solid var(--color);
+			color: aliceblue;
+			/* recortamos la imagen	usando overflow que tiene tres valoes hidden scroll y auto
+			lo que hace hidden es que cualquier cosa que se salga del padre lo recorte y solo se muestre a parte que no se esta escanpando, el valor scroll no recorta pone unos scrolls alo costado para que bajes si la imagen es muy grande y se pasa de los tamaños del padre, y el valor auto es para que me detecte si una imagen se escapa o cualquier contenido y se ponga automanticamente un scroll*/
+			overflow: auto;
+		}
+		img{
+			
+			float: left;
+			margin-right: 10px;
+		}
+		pre{
+			margin: 40px 0;
+			border: 1px solid var(--color);
+			width: 300px;
+			height: 150px;
+			color: white;
+			overflow: auto;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://www.masperros.com.mx/wp-content/uploads/2017/01/perro-carolina-1-200x200.jpg" width="400" height="500" alt="">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quas repudiandae delectus. Ipsum impedit harum dolorem, fugit quia eaque odio deleniti, fuga asperiores consectetur. Eius perferendis itaque saepe illo doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos deserunt quas earum ea dolorem harum atque laboriosam alias numquam maiores inventore natus accusantium dicta quos voluptatum, adipisci ut eius iusto.</p>
+		
+	</div>
+<!--	etiqueta que viene etablecido un estilo de letra-->
+	<pre>
+<!--	etiqueta para fondo de codigo-->
+		<code>
+			int numero[]= new int[4];
+			numero[0]=2;
+			numero[1]=2;
+			numero[2]=2;
+
+
+		</code>
+	</pre>
+</body>
+</html>

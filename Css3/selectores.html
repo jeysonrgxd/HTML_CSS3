@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body{
+        background: GAINSBORO;
+
+        }
+/*---busca al hijo directo no busca si hay un ul que este dentro de un li asi sea su nieto
+        li>ul{
+            color: red;
+        }
+*/
+/*  por otro lado este si busca cualquier ul que este dentro de un li asi sea nieto o hijo     */
+        li div{
+            color:red;
+            display: none
+        }
+/*   cuando el mause toca al li entonses el ul se activa el display:block     */
+        li:hover  div{
+            display: block;
+        }
+        div li:hover{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>hola</li>
+        <li>jeyson</li>
+        <li>como estas
+           <div>
+               <ul>
+                    <li>como</li>
+                    <li>estas</li>
+                    <li>todo</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+
+
+<!--
+  <strong>hola</strong>
+   <input type="checkbox" class="check">
+   <p class="enabled">Activado</p>
+   <p class="disabled">Desactivado</p>
+-->
+</body>
+</html>

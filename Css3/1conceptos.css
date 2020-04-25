@@ -1,0 +1,17 @@
+/*esta es la sintaxis de css la etiqueta llaves la 
+propiedad(ancho alto color, etc): el valor que tendra 
+y su ; al final
+header{
+	propiedad: valor;
+	propiedad: valor;
+	propiedad: valor;
+
+}*/
+
+/*ponemos la etiqueta header para cambiarle el ancho el largo
+y el color */
+header{
+	width: 100%;
+	height: 50px;
+	background: red;
+}

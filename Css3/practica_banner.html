@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../javascript/curso_jquery/jquery-3.2.1.js"></script>
+    <script>
+       $(document).ready(function(){
+           document.getElementById("banner").addEventListener("click",cerrar,false);
+           
+       }); 
+        function cerrar(){
+            $("#banner").remove();
+        }
+    </script>
+    <style>
+        body{
+            background: #ddd;
+        }
+        .banner{
+            border: 1px solid black;
+            width: 400px;
+            height:200px;
+            position: absolute;
+            background: rgba(36, 113, 163,.7);
+            margin:auto;
+        }
+        p{
+            float: right;
+            margin: 0;
+            padding: 7px 10px;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-radius: 4px;
+            
+        }
+        p:hover{
+            background:#C0392B;
+            cursor: pointer;
+            color: azure;
+        }
+        hr{
+            margin: 37px 0px;
+            height: 1px;
+            background: black;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="banner" id="banner">
+        <p>X</p>
+        <hr>
+    </div>
+  <div>
+     <img src="../imagenes/gokublue.png" alt="">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis ut doloremque quaerat, beatae aperiam a. Velit, id ut facilis earum at harum ullam optio corporis officiis neque tempora obcaecati.</span>
+  </div><br>
+   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eveniet ab quas a incidunt aliquid dolorum suscipit minima quod fuga ipsa laborum amet adipisci totam aperiam, dolorem reprehenderit debitis facilis!</span>
+    <div>
+     <img src="../imagenes/gokublue.png" alt="">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis ut doloremque quaerat, beatae aperiam a. Velit, id ut facilis earum at harum ullam optio corporis officiis neque tempora obcaecati.</span>
+  </div><br>
+   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eveniet ab quas a incidunt aliquid dolorum suscipit minima quod fuga ipsa laborum amet adipisci totam aperiam, dolorem reprehenderit debitis facilis!</span>
+    <div>
+     <img src="../imagenes/gokublue.png" alt="">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis ut doloremque quaerat, beatae aperiam a. Velit, id ut facilis earum at harum ullam optio corporis officiis neque tempora obcaecati.</span>
+  </div><br>
+   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eveniet ab quas a incidunt aliquid dolorum suscipit minima quod fuga ipsa laborum amet adipisci totam aperiam, dolorem reprehenderit debitis facilis!</span>
+  
+    
+</body>
+</html>

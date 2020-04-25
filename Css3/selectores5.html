@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selector</title>
+    <style>
+        /* todo "a" que sea hijo legitimo de ".primer", "no desendiente"*/
+        .primer>a{
+            background-color: darkgray;
+        }
+    /*Enpiesa con        */
+        [href^="/"],
+        [href^="https:"]{
+            color: green;
+            background: none;
+            
+        }
+    /* termina con */
+        [href$=".pdf"]{
+            color:red; 
+        }
+    /*todo href que termine en .com y que sea hijo legitimo de .segundo        */
+        .segundo>[href$=".com"]{
+            color: aqua
+        }
+    </style>
+</head>
+<body>
+   <div class="primer">
+        <a href="/contacto.html">Contacto</a>
+        <a href="https://ed.team.com">Cursos</a>
+        <a href="htps://youtbe.com">Youtube</a>
+    </div>
+    <div class="segundo">
+        <a href="www.google.com">Google</a>
+        <a href="archivo.pdf">archivo</a>
+    </div>
+</body>
+</html>

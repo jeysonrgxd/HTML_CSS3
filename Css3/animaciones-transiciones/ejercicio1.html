@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<style>
+   body{
+      background-color: #d1d1d1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   }
+   .dartvader{
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background-image: url(https://ae01.alicdn.com/kf/HTB1iv5NOFXXXXahXpXXq6xXFXXXM/Lienzo-personalizado-arte-Naruto-cartel-Naruto-pared-pegatinas-itachi-uchiha-papel-pintado-Anime-Mural-hogar-Navidad.jpg_640x640.jpg);
+      background-position: center center;
+      background-size: cover;
+   }
+   .dartvader::before{
+      content: "Itachi Uchija";
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 25px;
+      letter-spacing: 2px;
+      height: 100%;
+      color: white;
+      background-color: rgba(0,0,0,.5);
+      transform: scale(0.01);
+      opacity: 0;
+      transition: all .5s;
+   }
+   .dartvader:hover::before{
+      opacity: 1;
+      transform: scale(1);
+
+   }
+   
+</style>
+<body>
+   <div class="dartvader">
+      
+   </div>
+</body>
+</html>

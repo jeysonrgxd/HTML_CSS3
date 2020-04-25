@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*todo p que sea hijo primero asi sea en cualquier div que se encuentre se colorea, como no hay ningun p que se primer hijo no se pinta*/
+        p:first-child{
+            background-color: blue;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        
+        /*todo p que se hijo ultimo asi sea en cualquier div que se encuentre se colera*/
+        p:last-child{
+            background-color: darkred;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+          /*al primer hijo creado del div que es otro div hacer*/
+        .primer:first-child{
+            background-color: aqua;
+        }
+        
+        /*todo p que sea hijo tercero del div*/
+        p:nth-child(3){
+            background-color: black;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        
+        /*todo p que se hijo div y que se encuentre en la posicion de hijo multiplo de 5*/
+        p:nth-child(5n){
+            background-color: blueviolet;
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        
+        /*todo p que sea segundo hijo de tipo p del padre div*/
+        p:nth-of-type(2){
+            background-color: coral;
+            font-weight: bold;
+        }
+        /*todo p que sea multiplo de 4 mas 1 hij de tipo p hacer*/
+        p:nth-of-type(4n+1){
+            background-color: cadetblue
+
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+       <div class="primer">jeyson</div>
+       <div>estas</div>
+        <p>hola</p>
+        <p>jeyson</p>
+        <p>como </p>
+        <p>estas</p>
+        <p>jeyson</p>
+        <p>como </p>
+        <p>estas</p>
+        <p>jeyson</p>
+        <p>como </p>
+        <p>estas</p>
+        <p>como </p>
+        <p>estas</p>
+    </div>
+</body>
+</html>

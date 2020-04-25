@@ -1,0 +1,40 @@
+body{
+	background: gray;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+.rgb-color{
+	background: rgb(255,0,0);
+}
+
+.rgb-color-hexa{
+	background: #27D0DB;
+}
+
+.rgb-color-porce{
+	background: rgb(100%,0%,100%);
+}
+
+.hsl-color{
+	background: hsl(0,100%,50%);
+}
+
+.rgba-color{
+	/*lo valores de cuarto valor que recive el rgba van de 0 a 1
+		asi que puede ir como 0.1 , 0.4 , ..1
+		para obiar el cer se puede poner .1, .4 que 
+		ase referencia a 0.1, 0.4 
+	*/
+	background: rgba(255,255,0,1); 
+}
+
+.hsla-color{
+	background: hsla(30,100%,50%,0.8);
+
+}

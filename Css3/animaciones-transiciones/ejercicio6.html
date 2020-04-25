@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<style>
+   body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+   }
+   .stylo{
+      margin:0px 10px;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left:0%;
+   }
+   .cajita1{
+      background-color: coral;
+      transition: all 1s linear;
+
+      
+   }
+   .cajita2{
+      background-color:teal;
+      top: 190px;
+      transition: all 1s 1s ease-in;
+
+   }
+   .cajita3{
+      background-color: blueviolet;
+      top: 300px;
+      transition: all 1s 2s ease-out;
+
+
+   }
+   .cajita4{
+      background-color: peru;
+      top: 410px;
+      transition: all 1s 3s ease-in-out;
+
+
+   }
+   
+   body:hover .cajita1{ left: 23%; background-color: teal;}
+   body:hover .cajita2{ left: 46%; background-color: coral;}
+   body:hover .cajita3{ left: 69%;background-color: peru; }
+   body:hover .cajita4{ left: 92%;background-color: blueviolet; }
+
+</style>
+<body>
+  <h1>cajita movedicsa</h1>
+   <div class="cajita1 stylo"></div>
+      <div class="cajita2 stylo"></div>
+
+      <div class="cajita3 stylo"></div>
+
+      <div class="cajita4 stylo"></div>
+
+</body>
+</html>

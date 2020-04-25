@@ -1,0 +1,34 @@
+body{
+ background: #C3C3C4;
+}
+
+div{
+	height:100px;
+	width:100px;
+	border:2px solid black;
+	margin: 20px;
+}
+	
+div.reservada{
+	background: Lime;
+}
+
+div.reservada2{
+	background: red;
+}
+
+div.decimal{
+	background: rgb(0,0,0);
+}
+
+div.decimal2{
+	background: rgb(0,0,255);
+}
+/*tipo de colores hexadecimal*/
+div.hex{
+	background: #ffffff;
+}
+
+div.hex2{
+	background: #F0F;
+}

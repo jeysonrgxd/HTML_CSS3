@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+  background-color:#ddd;
+}
+div{
+  width:200px;
+  height:200px;
+  margin:150px 60px;
+  border:5px solid red;
+  display:inline-block;
+}
+.primer{
+/* lo redondeamos abajo ala izquierda 50px;   */
+  border-bottom-left-radius:50px;
+
+}
+.segundo{
+  border-color:blue;
+/*   border-top-right-radius:100px; */
+/*   border-bottom-left-radius:200px 200px; */
+/* pasamos eje x y eje y para formar el redondeado de la elipse   */
+  border-top-right-radius:50px 20px;
+
+}
+.tercero{
+  /*elipse radius tiene dos y aqui lo que asemos es asignarle a cada esquina en sentido de las manejillas de reloj su radio en X y Y de la elipse. ojo lo que esta ala izquiera del eslash es eje x y los de la derecha del eslash es ejex    */
+    border-radius:100px 50px 40px 70px / 60px 20px 50px 100px
+}
+	</style>
+</head>
+<body>
+	<div class=primer></div>
+<div class=segundo></div>
+<div class=tercero></div>
+</body>
+</html>

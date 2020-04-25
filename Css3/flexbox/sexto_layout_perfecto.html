@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <style>
+      *{
+         box-sizing: border-box;
+      }
+      body{
+         /* asignamos el tamaño del body al del viewport con la siquiente propiedad */
+         min-height: 100vh;
+         
+         display: flex;
+/*         flex-wrap: wrap;*/
+         /* le asigname en forma de columna para tener el layout perfecto         */
+         flex-direction: column;
+         margin: 0;
+         background-color: #d1d1d1;
+      }
+      .header{
+/*      flex-grow:1;*/
+
+         padding: 2em;
+         background-color: greenyellow;
+         width: 100%;
+      }
+      /* creamos un conteiner para que contenga los tres div y le asignamos display flex i un factor de crecimiento de uno ya que el body tiene el alto de view port y como sobra espacio le repartimos a este conteiner con flex-grow   */
+      .conteiner{
+         display: flex;
+/*         flex: ;*/
+         flex-grow:1;
+                  
+      }
+      .first{
+         flex-basis: 25%;
+/*         flex: 0 0 25%;*/
+         padding: 10px;
+         background-color:yellow;
+      }
+      .main{
+         flex-basis: 50%;
+/*         flex: 0 0 50%;*/
+         padding: 10px;
+         background-color: cornflowerblue;
+      }
+      .second{
+         flex-basis: 25%;
+/*         flex: 0 0 25%;*/
+         padding: 10px;
+         background-color: deeppink;
+      }
+      .footer{
+/*                  flex-grow:1;*/
+
+         width: 100%;
+         padding: 2em   ;
+         background-color:  darkorange
+      }
+   
+   </style>
+</head>
+<body>
+   <header class="header">header</header>
+   <div class="conteiner">
+      <aside class="first">Aside first</aside>
+      <main class="main">main</main>
+      <aside class="second">second</aside>
+   </div>
+   <footer class="footer">footer</footer>
+</body>
+</html>

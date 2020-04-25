@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    /*todo elemento que sea descendiente de form y que tenga el focus le pone un fondo rojo         */
+        form input{
+            display: block;
+            margin: 10px 0;
+        }
+    /*Pseudoclase focus, cualquier elemento del form que tenga el focus ponerle un fondo red       */
+        form :focus{
+            background: red;
+        }
+        label{
+            display: none
+        }
+    /*cualquier input que tenga la propiedad type que enpiece cn chec y que este en checked el que le sige tendra la propiedades asignadas        */
+        input[type^="chec"]:checked + label{
+            display: block;
+            color: #fff;
+            background: black;
+            font-weight: bold;
+            width: 80px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" class="texto">
+        <input type="text" class="texto" >
+        <input type="checkbox"><label for="">presionado</label>
+    </form>
+</body>
+</html>

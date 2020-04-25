@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>psudoelementos</title>
+	<style>
+		.download{
+			display: block;
+			margin: 20px 0;
+		}
+		/*	hacer antes de, ciempre se pone el content='' aunque no le espicifiquemo nada , tambien ese conten recive un imagen con url. lo mismo sucede con after despues de hacer . estos son hijos de la etiqueta antes o despues	*/
+		p::before{
+			content: 'hola';
+		}
+		p::after{
+			content: ' como estas'
+		}
+		a[href$='pdf']::before{
+			content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAz1BMVEX///+pqan29vbDwsLn5+f7//+xjI342drX2dr/OkDh4uPd3+DW2Nnk5ubYJyzx8fHYAAD/LTPiJirz//+pqqr/Rkv/TlO2l5j/jpHaCg/eEhfYGR3oLDHlHSP0paf2trjxiIvqS1D3v8DnMzf/YWX78/X/dHj/Z2v/oaT/s7X55+b1mKHYISb/QUf1NDr8x8j5en380NH+Vlv/qazzcXTsFhviqbDnX2zjx8rg7u3npKvZt7vsQ1K8vLzZ5ubijpbucHzuipXuV2Xl0dPsfYbtHkgmAAABJ0lEQVQokX3S2XKCMACF4RgTgZDFDTdErFUrKojWqqGVgvX9n6mxFU174T9Dbr45mVwAwIOOSI+Wb1CCtqmidmpSRAUpa0BV5ntiUkYZIMe/izT5TNXCJrdNCRJble72qc2E2sJSAYio2GEvCUFCCA2YSiYfX5IwwtgdxOWd8pxkSEqJtIWai8YuQ/npfN7pVymBYr/w/UOe5RDqgI0sb1yCQgeA56cMYngJQ1BAEwM8WUxwEcDN68JQzQ2t66JS63Wr1erPp45ur1a5gtX3Bv7waeQPntWx9awbRN7KG838/taPh2/96A5htOqsO0EtWsXr2VgDx1rHm6kRB69xsGmFd2g5nTAcB8HMeZlaTquAdp1zl/Ol67p8ueSc19u/gMr/Qw9+nW+yiR/fUrfYHwAAAABJRU5ErkJggg==)
+		}
+		a[href$='docx']::before{
+			content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAARVBMVEX////J2fAuTnbq9P0CJ3zQ5vu5zeqmv+V8nNfh7vz1+/+XsOZqjN0uWauQptlNdc65x9rh5ONccoqsuszM1N6Uo7Lk4dZy2XH4AAAA/ElEQVQokX2RWXLEIAwFJYPEvhjsuf9RIwP2OFWp9Beo60ksAP9y7JPee+1vkU0IOVtzreu5ilaKwdoYY9HXvkObIj45TKBInX6ZyMEG6GyzTWAQT0XT2BDLHjeXUhAhrdq2tU1EgXxSaUqfpIGZ2DCpNoQM1tfkoAGtHAQBViLqT9QNsgZjgy0V/BRJf0DLUUUclbm6KRIch4xUl3AoMC3h5y08GA1EhOhADVFS0gu4EpWmGO+DVogZWUYYBHeLHUY/j3OGf8Qxeowqs0FPX2HY3IRfQi0kwageUcEpd6GCMZlfwq+AXNp79xUo+1F3jgZpiVP+4E26E3/wA7EQCz/1rwSxAAAAAElFTkSuQmCC);
+		   
+      }
+		.download::before{
+			content: '';
+			margin: 0 5px;
+			display: inline-block; 
+			
+		}
+	</style>
+</head>
+<body>
+	<p></p>
+	<a href="blalal.pdf"  class="download">Descargar manual</a>
+	<a href="blalal.docx" class="download" >Descargar documento</a>
+
+</body>
+</html>

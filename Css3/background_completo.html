@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hola</title>
+	<style>
+		
+		.primer{
+			margin: 0 0 100px 0;
+			width: 300px;
+			height: 300px;
+			border: 2px solid black;
+			background-image: 
+				url("http://www.phpbb-es.com/foro/styles/FLATBOOTS/theme/images/user4.png"), url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Yin_and_Yang.svg/200px-Yin_and_Yang.svg.png"), url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Yin_and_Yang.svg/200px-Yin_and_Yang.svg.png"),url("http://www.phpbb-es.com/foro/styles/FLATBOOTS/theme/images/user4.png");
+			background-color: yellow;
+			background-repeat: no-repeat;
+			background-position: bottom right, top left, top right, bottom left;
+			background-size: 50px 50px, 50px 50px, 50px 50px, 50px 50px;
+		}
+		
+		.segundo{
+			width: 400px;
+			height: 400px;
+			border: 10px dotted black;
+			padding: 20px;
+			background-image: url("http://www.phpbb-es.com/foro/styles/FLATBOOTS/theme/images/user4.png"),url("https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Other%20Explore%20Photos/R-Z/Wacky%20Weekend/Wild%20Cats/ww-wild-cats-tiger.adapt.945.1.jpg");
+			background-repeat: no-repeat;
+			background-size: 50px 50px,400px 400px;
+			background-position: bottom right, center center;
+			/*	background-clip desde donde ve amostrar de border box o de padding box o de content boc acordandonos del box-model en imagenes google mostrar. el background-origin que teambien recive valores iguales al de background-clip, lo que hace dibuja desde donde le emos indicado (tambien el border lo dibuja o algo asi repasar)		*/
+			background-clip: content-box;
+			background-origin:content-box;
+
+			
+		}
+		.tercero{
+			margin: 50px 0 0 0;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border: 20px dashed gray;
+			background-color: red;
+			background-clip:content-box;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="primer"></div>
+	<div class="segundo"></div>
+	<div class="tercero"></div>
+
+
+</body>
+</html>

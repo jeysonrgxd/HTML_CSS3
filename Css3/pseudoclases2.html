@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{     
+            margin: 0;
+        }
+        nav{
+            border: 1px solid black;
+            background: #222;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            text-align: center;
+            top: 0;
+        }
+        a{
+            display: block;
+            color: #fff;
+            font-weight: bold;
+            line-height: 50px;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline; 
+        }
+        #lorem{
+            margin-top: 50em;
+            margin-bottom: 50em;
+        }
+        #lorem:target{
+            padding-top: 100px;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#lorem">Click lorem</a>
+    </nav>
+    
+    <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ut itaque quod, voluptatem minima accusantium optio, maiores fuga. Ut eligendi voluptate, ipsum doloremque quibusdam repudiandae quaerat asperiores eius, sapiente rem.</p>
+</body>
+</html>

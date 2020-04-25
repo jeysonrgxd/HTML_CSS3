@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /*  todo input que este bien escrito de acuerdo a tio como es el caso email       */
+        input:valid{
+            background: red
+        }
+        input:invalid{
+             background: yellow;   
+        }
+    /*------------------------*/
+    /* todo input que este en el rango hacer        */
+        input[type^="num"]:in-range{
+            border: 3px solid black;
+        }
+        input[type^="num"]:out-of-range{
+            border: 3px solid  blue;
+        }
+    
+    </style>
+</head>
+    <body>
+    <form action="">
+        <input type="email">
+        <input type="text">
+    </form>
+    <hr>
+    <form action="">
+        <input type="number" max="10">
+        <input type="text">
+    </form>
+</body>
+</html>

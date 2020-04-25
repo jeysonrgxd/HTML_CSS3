@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jeyson</title>
+    <style>
+        body{
+            background: GAINSBORO;
+        }
+        .disabled{
+            display: none;
+        }
+        .check:checked ~ .disabled{
+            display: block;
+        }
+        .check:checked ~ enabled{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <input type="checkbox" class="check">
+   <p class="disabled">Activado</p>
+   <p class="enabled">Desactivado</p>
+
+    
+</body>
+</html>

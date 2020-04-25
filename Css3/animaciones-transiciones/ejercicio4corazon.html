@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+<style>
+   body{
+      margin: 0;
+      padding: 0;
+      background-color: #d1d1d1;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+   }
+/*  asiendo un corazon */
+   .corazon{
+      width: 400px;
+      height: 300px;
+      border: 1px solid red;
+      position: relative;
+   }
+   
+   .corazon::before, .corazon::after{
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background-color: red;
+      
+   }
+   .corazon::before{
+      left: 50%;
+      border-radius: 50% 50% 0% 0%;
+      transform-origin: bottom left;
+      transform: rotate(-50deg);
+      transition: all .8s;
+   }
+   .corazon::after{
+       border-radius: 50% 50% 0% 0%;
+      transform-origin: bottom right;
+      transform: rotate(50deg);
+            transition: all .8s;
+
+
+   }
+   .corazon:hover::after{
+      transform: rotate(50deg) scale(1.041);
+   }
+    .corazon:hover::before{
+      transform: rotate(-50deg) scale(1.041);
+   }
+/*   asiendo un rombo*/
+   
+   .rombo{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      border: 1px solid black;
+      transform: scale(0.7);
+      position: relative
+   }
+   .rombo::after,.rombo::before{
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      background-color: teal;
+   }
+   .rombo::before{
+        
+
+      transform: rotate(45deg);
+   }
+   .rombo::after{
+      top:50%;
+/*      border-radius:100% 400% 0 0;*/
+            transform: rotate(45deg);
+
+   }
+</style>
+</head>
+<body>
+   <div class="corazon"></div>
+   <div class="rombo"></div>
+</body>
+</html>

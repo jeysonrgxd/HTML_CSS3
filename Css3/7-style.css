@@ -1,0 +1,65 @@
+/*es para ponerle propiedades a la etiqueta que tenga
+el atributo title*/
+p[title]{
+
+	color:#D25050;
+
+}
+/*es para ponerle propiedades a la etiqueta con el valor
+de su atributo*/
+p[title ~="es"]{
+	
+	color: #D92929;
+	font-weight: bolder;
+}
+/*es para ponerle propiedades a la etiqueta con el valor
+de otro su atributo*/
+p[lang |="es"]{
+
+	color:#50C265;
+	font-weight :bolder;
+}
+/*al poner las propiedades los que esten dento deñ div
+tendran esas caracteristicas*/
+div{
+
+	font-size: 50px;
+}
+
+article p.principal{
+
+	font-size:20px;
+}
+/*clases asignadas en el mismo orden se cambia de color
+de acuerdo a la lectura del codigo por 
+parte del navegador*/
+.rojo{
+
+	color:red;
+}
+
+.naranja{
+
+	color:orange;
+}
+
+
+/*Identificador un poco confusa*/
+
+div#segundo{
+
+	font-size: 20px;
+	color: gray;
+}
+p#a{
+
+	color:gray;
+}
+/*forzamos con la palabra !important el que
+va tener la propiedad final*/
+p.b{
+
+	color:red !important;
+}
+
+/**/

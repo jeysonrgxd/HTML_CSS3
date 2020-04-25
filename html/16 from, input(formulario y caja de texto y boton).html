@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<!--form = formulario que emgloba a los imputs es mejor para tener un diseño css3 resive un id un nombre y method que es para que los datos se los pase al archivo de tipo php o otro lenguaje de servidor que se declara en action-->
+	<form id="form" name="form" method="post" action="">
+		<span>Datos: </span>
+
+		<!--input para crear una caja de texto recive nombre un id el tipo que sera placehoder es que va un texto pequeño -->
+		<!--antes de escriir en la caja de texto y lo ultimo es codigo una vez borrado lo que escribimo que nos aparesca de nuevo el valor del placehoder-->
+		<input id="email" name="email" type="text" placeholder="Introduce tu email" onfocus="if (this.placeholder== '')this.placeholder ='Introduce tu email' "/>
+
+	<!--le cambiamos la palabra que rrecive type="text" por type="submit" creara la un boton value= es para ingresar el texto del boton -->
+		<input id="button" name="boton" type="submit" value="Ingresar">
+	</form>
+	
+</body>
+</html>

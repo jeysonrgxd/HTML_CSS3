@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<style>
+/* EJERCICIO1  */
+/*
+   .conteiner{
+      margin: auto;
+      width: 400px;
+      height:400px;
+      border: 1px solid black;
+   }
+*/
+/*
+   .box{
+      background-color: red;
+      text-align: center;
+      line-height: 400px;
+      opacity: .7;
+      color: white;
+      transform: rotate(45deg) translateX(50%) scaleY(1);
+   }
+--------------------------------------------------------------------
+*/
+   
+/* EJERCICIO2  */
+/*  centrado absolutamente */
+    .conteiner{
+      position: relative;
+      margin: auto;
+      width: 400px;
+      height:400px;
+      border: 1px solid black;
+   }
+   .box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      opacity: .7;
+/*      transform: translate(-50%,-50%) rotate(45deg);*/
+      transition: all .5s;
+
+
+   }
+   .rotar{
+      transform: rotate(45deg);
+   }
+</style>
+<body>
+  <h2>TRANSFORMACIONES</h2>
+  <button id="girar">Girar45°</button>
+  <br>
+  <br>
+   <div class="conteiner">
+      <div class="box" id="box">Hola</div>
+   </div>
+   
+   <script>
+      var boton= document.getElementById("girar");
+      var box = document.getElementById("box");
+      boton.addEventListener("click",function(){
+         box.classList.add("rotar");
+         console.log("hola como estas");
+      },false);
+   </script>
+</body>
+</html>

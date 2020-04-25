@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <style>
+      body{
+         padding: 0;
+         margin: 0;
+         background-image: url(paisaje.jpg);
+
+         background-position: left top;
+         background-repeat: no-repeat;
+         background-size: 130% 100%;
+         height: 100vh;
+         position: relative;
+         animation-name: fondo;
+         animation-duration: .3s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+      }
+      .carrito{
+         position: absolute;
+         bottom: 0px;
+         left:40%;
+         display: table;
+         z-index: 100;
+         
+      }
+      .carrito img{
+         padding: 0;
+         margin: 0;
+         
+      }
+      .rueda1,.rueda2{
+         position: absolute;
+         background-image: url(rueda.png);
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         height: 55px;
+         width: 55px;
+         animation-name: rueda;
+         animation-duration: .5s;
+         animation-iteration-count: infinite;
+         animation-direction: normal;
+         animation-timing-function: linear;
+      }
+      .rueda1{
+         bottom: 56px;
+         left: 40.8%;
+         z-index: 200;
+
+      }
+      .rueda2{
+         bottom: 56px;
+         left: 58.1%;
+         z-index: 200;
+
+      }
+     /* @keyframes carrito{
+         from{
+            left:1%;
+         }
+         to{
+            left:70%;
+         }
+      }*/
+      @keyframes fondo{
+         from{
+            background-position: top left;
+         }
+         to{
+            background-position: right top ;
+
+         }
+      }
+       @keyframes rueda{
+         from{
+            transform: rotate(0deg);
+         }
+         to{
+            transform: rotate(360deg);
+         }
+      }
+   </style>
+</head>
+<body>
+  <div class="rueda1"></div>
+  <div class="rueda2"></div>
+
+   <div class="carrito">
+      <img src="carrito1.png" width="400px" alt="">
+   </div>
+</body>
+</html>

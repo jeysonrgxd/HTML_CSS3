@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <style>
+      nav{
+         top: 0;
+         background: #ddd;
+         position: fixed;
+         left: -100%;
+         height: 100%;
+         overflow: auto;
+         width: 10%;
+         transition: all .5s
+            
+         
+      }
+      ul{
+         padding: 0;
+         margin: 0;
+         list-style: none;
+      }
+      li{
+         padding: 20px;
+         border-bottom: 1px solid #bbb;
+      }
+      li:hover{
+         background: #d1d1d1;
+      }
+      a{
+         display: block;
+         color: #222;
+         text-decoration: none;
+      }
+      main{
+         margin-left: 0;
+         transition: all .5s;
+         
+      }
+      .menu{
+         border: 1px solid black;
+         position: fixed;
+         right: 0;
+         top: 0;
+         padding: 10px;
+            
+      }
+      .menu h1{
+         padding: 0;
+         margin: 0;
+         display: block;
+      }
+      #cerrar{
+         display: none;
+      }
+
+   
+   </style>
+   <script>
+      $(document).ready(function(){
+         $("body").hide().fadeIn(2000);
+         //$(".menu").click(function(){
+         //   $(".contenido").css("margin-left","11%");
+         //   $("nav").css("left","0");
+
+         //   });
+         
+         
+         var abrir= document.getElementById("abrir");
+         var cerrar = document.getElementById("cerrar");
+         let condi = false;
+         
+         abrir.addEventListener("click",function(){
+            if(condi==false){
+               $("nav").css("left","0");
+               $(".contenido").css("margin-left","11%");
+               $(this).hide().fadeOut(1000);
+               $("#cerrar").fadeIn(2000);
+               condi =true;
+            }
+         },false);
+         
+         cerrar.addEventListener("click",function(){
+            if(condi){
+               $("nav").css("left","-100%");
+               $(".contenido").css("margin-left","0");
+               $(this).hide().fadeOut(1000);
+               $("#abrir").fadeIn(2000);
+               condi =false;
+            }
+         },false);
+      });
+   </script>
+</head>
+<body>
+  <div class="menu">
+    <h1 id="abrir">-</h1>
+     <h1 id="cerrar">X</h1>
+  </div>
+   <nav>
+      <ul>
+         <li><a href="#item1">item 1</a></li>
+         <li><a href="#item2">item 2</a></li>
+         <li><a href="#item3">item 3</a></li>
+         <li><a href="#item4">item 4</a></li>
+         <li><a href="#item5">item 5</a></li>
+         <li><a href="#item6">item 6</a></li>
+         <li><a href="#item7">item 7</a></li>
+         <li><a href="#item8">item 8</a></li>
+         <li><a href="#item9">item 9</a></li>
+         <li><a href="#item10">item 10</a></li>
+         <li><a href="#item11">item 11</a></li>
+         <li><a href="#item12">item 12</a></li>
+         <li><a href="#item13">item 13</a></li>
+         <li><a href="#item14">item 14</a></li>
+      </ul>
+   </nav>
+   <main class="contenido">
+      <h2>Position fixed</h2>
+   
+      <section>
+         <h2 id="item1">Item 1</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae suscipit sit, aliquam voluptatibus amet doloribus, maxime vitae illo blanditiis doloremque nostrum. Tempora qui, fugiat dolore natus sequi molestiae porro. Tempora!</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nemo soluta sit ipsum a quibusdam, ea vitae iusto. Mollitia, repellat harum. Excepturi quo cumque tenetur animi dicta adipisci quas porro.</p>
+      </section>
+      <section>
+         <h2 id="item2">Item 2</h2>
+         <p>Quidem veritatis voluptas, saepe laudantium commodi iste corrupti ab illo eligendi est accusamus id vitae nemo, recusandae corporis dolor culpa. Provident quis totam hic inventore dicta voluptate amet error ipsum!</p>
+         <p>Itaque sint earum iusto tempora delectus, laboriosam magni ab praesentium officia fugiat, cum perspiciatis. Error dicta veniam atque laborum maiores velit fugiat, optio itaque et praesentium autem deleniti libero beatae.</p>
+      </section>
+      <section>
+         <h2 id="item3">Item 3</h2>
+         <p>Repellat, ullam perspiciatis eligendi at, beatae dolor illo quo saepe aperiam, neque labore, harum minima. Neque ullam est officiis quos eius ipsa corporis atque. Fuga cupiditate dolorum laborum beatae velit?</p>
+         <p>Suscipit dicta recusandae quas quia impedit quisquam dolorum, provident obcaecati labore facilis alias. Suscipit nihil, dignissimos nam consequuntur ratione molestias explicabo deserunt, reprehenderit error in officia, aspernatur, atque esse ad!</p>
+      </section>
+      <section>
+         <h2 id="item4">Item 4</h2>
+         <p>Mollitia, alias magnam atque dicta id consectetur dignissimos expedita sunt repellendus voluptatibus laboriosam nam ea, explicabo ut. Porro excepturi, sint voluptates, perferendis ut libero deleniti et provident expedita aliquam cumque!</p>
+         <p>Magni ea non ratione quod inventore necessitatibus ipsam animi cupiditate quam eligendi, laudantium rerum velit voluptates, cumque labore autem repudiandae quidem veniam. Eligendi, distinctio ad! Dolore voluptatem consequatur aut illo!</p>
+      </section>
+      <section>
+         <h2 id="item5">Item 5</h2>
+         <p>Ullam nulla iusto, est quam numquam consequatur eveniet voluptates animi nesciunt provident officiis sed laborum fugiat eius, repellat incidunt cumque in obcaecati a! Deserunt hic vero earum omnis, quas natus.</p>
+         <p>Nemo quia suscipit molestias recusandae a voluptas odio. Sed assumenda, consequatur? Ea maiores iusto sapiente sit repellendus mollitia? Quidem omnis illum quisquam magnam cumque architecto dolor facilis porro veniam enim.</p>
+      </section>
+      <section>
+         <h2 id="item6">Item 6</h2>
+         <p>Quia voluptates quae veritatis doloribus facere, velit assumenda voluptatibus magni, at commodi ducimus. Quas quidem quis amet illo quisquam aspernatur provident. Culpa iste est voluptatum in, perspiciatis nemo? Suscipit, necessitatibus.</p>
+         <p>Rerum repellendus quos obcaecati, dicta quisquam accusamus molestias odit tempora. Enim quis reiciendis, assumenda sequi at praesentium nulla veniam sint, repudiandae doloribus. Iure molestias, vel consequuntur vitae obcaecati ad dolor.</p>
+      </section>
+      <section>
+         <h2 id="item7">Item 7</h2>
+         <p>Velit labore aperiam id vel amet in ipsa veniam, magnam ex. Possimus assumenda repellendus fugit porro nulla beatae eius quaerat consequuntur reiciendis. Non, qui suscipit dolores? Ducimus quibusdam, molestias sapiente.</p>
+         <p>Mollitia ex aliquid praesentium libero obcaecati molestias, quibusdam veniam, accusantium atque quam incidunt adipisci magnam. Tempore error, maxime earum iusto, explicabo consequuntur iure, a labore debitis sit minima assumenda mollitia.</p>
+      </section>
+      <section>
+         <h2 id="item8">Item 8</h2>
+         <p>Corporis reiciendis dicta veniam voluptatum magni delectus, cum nemo similique dolorum sunt, suscipit hic blanditiis ullam, deleniti voluptatibus modi. Consequuntur autem amet provident facilis nam possimus alias sunt ullam est.</p>
+         <p>Esse, labore temporibus reiciendis perferendis, laboriosam commodi illum maxime, officia delectus vero voluptate recusandae ullam dicta dolores veniam, consequatur laborum. Atque, odio quisquam aperiam nisi! Est eos ducimus quaerat provident.</p>
+      </section>
+      <section>
+         <h2 id="item9">Item 9</h2>
+         <p>Consequuntur laboriosam cupiditate nesciunt. Dignissimos nam atque eligendi unde officiis est ab vel, eos, aut ipsa cupiditate necessitatibus sit. Recusandae praesentium, impedit sed sit vitae expedita dolor quaerat veritatis eaque.</p>
+         <p>Reprehenderit reiciendis quisquam ipsum rerum ea facere atque porro harum labore saepe qui magni nisi veritatis optio, explicabo illum soluta minus fugiat amet autem consequuntur est ex, maiores quibusdam in.</p>
+      </section>
+      <section>
+         <h2 id="item10">Item 10</h2>
+         <p>Saepe, consequuntur, in doloribus nulla at deleniti eos neque maxime illo sequi commodi. Ipsa, ea? Dolorem, necessitatibus, deleniti? Perferendis soluta quas dignissimos voluptas esse a cumque tempore commodi sunt vitae.</p>
+         <p>Impedit repellat, similique voluptate qui tenetur, ipsa non rem quae cum consectetur neque iusto magni cupiditate laudantium dolorum vel consequatur accusamus illum mollitia adipisci dicta tempore perspiciatis inventore placeat numquam?</p>
+      </section>
+      <section>
+         <h2 id="item11">Item 11</h2>
+         <p>Consequatur necessitatibus nihil odit, provident aut ducimus laborum magnam dolore mollitia tempore beatae incidunt eos nesciunt odio? Vero sed quaerat, quidem autem eius similique dolorem in aliquid dolorum maiores animi.</p>
+         <p>Ipsam modi neque recusandae velit voluptas quod, est voluptatibus pariatur eum, quam, eos explicabo sunt nam ratione quibusdam natus repudiandae, inventore culpa dolorem fugiat nihil. Quo quaerat delectus molestiae perspiciatis.</p>
+      </section>
+      <section>
+         <h2 id="item12">Item 12</h2>
+         <p>Iusto dolorem laboriosam esse impedit dolores neque, modi nihil voluptatem eveniet, tempora vitae ex veniam praesentium voluptates, quis placeat recusandae repudiandae repellendus laborum. In impedit earum, unde esse quisquam eius!</p>
+         <p>Ex neque aliquid pariatur autem ab asperiores tempore rerum quas molestias repudiandae quos provident fugit aperiam itaque maxime esse voluptatibus quasi, distinctio dicta mollitia saepe consequuntur soluta. Nisi nemo, possimus?</p>
+      </section>
+      <section>
+         <h2 id="item13">Item 13</h2>
+         <p>Fugiat quaerat ex quas ullam harum aliquid veniam voluptatibus nemo aliquam, et nisi, maiores non vitae voluptates quis velit vel assumenda a nam tenetur ipsum. Inventore maiores voluptas veniam nam.</p>
+         <p>Explicabo sit perferendis, nulla eum enim, aperiam obcaecati praesentium nisi eos illum tempora aliquam dignissimos atque ipsum blanditiis culpa labore laboriosam incidunt quam molestiae officia facilis voluptatum! Error, facilis, tempore.</p>
+      </section>
+      <section>
+         <h2 id="item14">Item 14</h2>
+         <p>Recusandae, esse nobis. Dolorem blanditiis, assumenda aut architecto et mollitia quo sunt a, eligendi eum sit quis magnam culpa perferendis alias asperiores! Doloribus officiis quidem error dolorum, reiciendis nostrum eveniet?</p>
+         <p>At doloremque neque, quasi beatae. Tempore iusto dolorum aspernatur temporibus, nostrum illum doloribus non incidunt asperiores, beatae cumque omnis amet eligendi! Ea odio ex ab neque omnis molestiae laudantium id?</p>
+      </section>
+   </main>
+</body>
+</html>

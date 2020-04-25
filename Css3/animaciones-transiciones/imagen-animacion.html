@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		background-image: url(http://www.stickpng.com/assets/images/5846a020cef1014c0b5e47f9.png);
+		font-family: sans-serif;
+		text-shadow: 0 0 2px darkred;
+		padding: 0;
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #d1d1d1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.sophi{
+		width: 300px;
+		border-radius: 50%;
+		height: 300px;
+		/*border: 1px solid red;*/
+		background-image: url("https://apuntoenlinea.com/wp-content/uploads/2019/01/1547882361_sophie-turner-de-game-of-thrones-revelo-que-fue-lo-mas-desagradable-de-grabar-la-serie.jpg");
+		box-shadow: 0 0 10px black;
+		background-repeat: no-repeat;
+		background-position: 0%;
+		background-size: cover;
+		animation-name: imagen;
+		animation-iteration-count: infinite;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-direction: alternate;
+
+	}
+	@keyframes imagen{
+		from{
+			background-position: 0%;
+			
+		}
+		to{
+			background-position: 100%;
+		
+		}
+	}
+	h1{
+		text-align: center;
+		color: red;
+
+	}
+</style>
+<body>
+	<h1>SOPHIE TURNER</h1>
+	<div class="sophi"></div>
+	
+</body>
+</html>

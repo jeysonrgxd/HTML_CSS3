@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<style>
+   body{
+      background-color: #d1d1d1;
+   }
+   
+   div[class^="cont"]{
+      margin:0 20px;
+   }
+   .conteiner{
+      border: 1px solid black;
+      display: inline-flex;
+      width: 500px;
+      height: 500px;
+      background: #CACEFE;
+      flex-direction: column;
+      justify-content:center;
+   }
+  .item{
+      text-align: center;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      background: yellow;
+/*      margin: auto;  */
+        transition: all .3s;
+
+   }
+   .item:nth-child(3){
+      background-color: green;
+      margin: auto 0;
+   }
+   .item:hover{
+      cursor: pointer;
+      width: 50px;
+      text-align: center;
+
+   }
+/*---------------------------------*/
+   .conteiner2{
+      border: 1px solid black;
+      display: inline-flex;
+      width: 500px;
+      height: 500px;
+      background: #CACEFE;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+   }
+   .item2{
+      width: 30px;
+      height: 30px;
+      background-color:darkred;
+      text-align: center;
+      line-height: 30px;
+      margin: 0 auto;
+      
+      
+      
+      
+   }
+   .item2:nth-child(even){
+      background-color: darkcyan;
+   }
+   
+</style>
+<body>
+  <div class="conteiner">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+</div>
+ <div class="conteiner2">
+      <div class="item2">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      
+</div>
+
+</body>
+</html>

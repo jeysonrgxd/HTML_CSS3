@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <style>
+      body{
+         background-color: #d1d1d1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         padding: 0;
+      }
+      .cont{
+         width: 300px;
+         height: 500px;
+         border:2px solid #f3f3f3;
+         border-top: none;
+         position: relative;
+         border-radius: 0 0 10px 10px;
+      }
+      .cont:before{
+         content: '';
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         height: 0%;
+         border-radius: 0 0 10px 10px;
+         background-color: aqua;
+         transition:  all.9s;
+      }
+      .cont:hover:before{
+         height: 96%;
+
+
+      }
+   </style>
+</head>
+<body>
+   <div class="cont"></div>
+</body>
+</html>

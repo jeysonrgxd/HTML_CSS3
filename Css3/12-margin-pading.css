@@ -1,0 +1,19 @@
+div{
+	border: 1px solid red;
+	width: 300px;
+	height: 100px;
+	margin: 0 0 20px 20px;
+	text-align: center;
+}
+
+.primero{
+	padding: 8px 0 0 8px;
+}
+
+.segundo{
+	
+}
+
+a{
+	border: 1px solid black;
+}

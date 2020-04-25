@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<style>
+   body{
+      padding: 0;
+      margin: 0;
+   }
+   .container{
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 15% 70% 15%;
+      grid-template-rows: 100px 1fr 100px;
+      grid-template-areas: 
+         "header header header"
+         "aside1 main aside2"
+         "footer footer footer"
+   } 
+   .container div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-weight: bold;
+   }
+   .header{
+      background-color: #00a8b5;
+      grid-area: header;
+   }
+   .aside1{
+      background-color: #774898;
+      grid-area: aside1;
+   }
+   .aside2{
+      background-color: #774898;
+      grid-area: aside2;
+   }
+   .main{
+      background-color: #de4383;
+      grid-area: main;
+   }
+   .footer{
+      background-color: #f3ae4b;
+      grid-area: footer;
+   }
+   
+</style>
+
+<body>
+   <div class="container">
+      <div class="header">HEADER</div>
+      <div class="aside1">ASIDE1</div>
+      <div class="aside2">ASIDE2</div>
+      <div class="main">MAIN</div>
+      <div class="footer">FOOTER</div>
+   </div>
+</body>
+</html>

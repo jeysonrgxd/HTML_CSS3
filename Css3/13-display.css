@@ -1,0 +1,19 @@
+div{
+	/*border: 1px solid black;*/
+	/*text-align: center;*/
+}
+/*display: inline-block alinea en un solo reglon pero dando todo para que entre el texto conpleto
+  mientras que display: inline los alinia igual pero sin separacion y si hay espacia ara cada palabra que
+  contengan los textos los pondra
+  display: block viene por defecto en alguno etiquetas vordeando todo el texto en un rectangulo entodo el navegador
+  display: none oculta el contenido*/
+a{
+	font-weight: bold;
+	background: orange;
+	border: 1px solid black;
+
+	display: inline-block;
+	margin:20px 20px;
+	text-decoration: none;
+	
+}

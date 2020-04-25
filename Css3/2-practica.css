@@ -1,0 +1,26 @@
+header{
+	width: 500px;
+	height: 100px;
+	margin: 20px;
+	background: #A9E9EF;
+
+}
+
+
+
+li{
+	width:20px ;
+	height:20px;
+	margin:20px;
+	background: #81FD95;
+
+
+}
+
+section{
+	width: 500px;
+	height: 300px;
+	margin: 20px;
+	background: #9797F5;
+
+}

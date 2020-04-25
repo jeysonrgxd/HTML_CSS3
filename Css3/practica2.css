@@ -1,0 +1,35 @@
+body{
+	background: #CCCAD2;
+}
+
+div{
+	height: 100px;
+	width: 50%;
+	border:2px solid black;
+	margin: 20px;
+}
+
+div.reservada{
+	background: Lime;
+}
+
+div.reservada1{
+	background: peru;
+}
+
+div.decimal{
+	background: rgb(255,255,255); 
+}
+
+div.decimal1{
+	background: rgb(255,0,0);
+}
+
+
+div.hexadecimal{
+	background: #000000;
+}
+
+div.hexadecimal1{
+	background: #f0f;
+}

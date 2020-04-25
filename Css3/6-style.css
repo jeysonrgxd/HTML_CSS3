@@ -1,0 +1,27 @@
+
+/*sirve para cuando las etiquetas seguidas sin otra 
+ etiqueta depormedio tiene a asu etiqueta
+padre en la primera fila del codigo 
+p+p{
+
+	color: RED;
+}
+*/
+/*solo para los hijos de la etiqueta(solamente hijos)
+div > p{
+
+	color:red;
+}*/
+
+/*para que tienen como hermano asu otra etiqueta asi este
+depormedio ota etiqueta*/
+p~p{
+	
+	color:#B30AC7;
+}
+p[title]{
+	
+	color: red;
+
+}
+

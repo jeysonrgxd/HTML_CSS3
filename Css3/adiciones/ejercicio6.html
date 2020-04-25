@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <style>
+      body{
+         background-color: #d1d1d1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         padding: 0;
+
+      }
+      div{
+         font-size: 120px;
+         color:transparent;
+         font-weight: 900;
+         position: relative;
+         -webkit-text-stroke:2px #000;
+
+      }
+      div:before{
+/*         border: 1px solid red;*/
+         content: attr(data-text);
+         color:palevioletred;
+         width: 0px;
+         white-space: nowrap;
+         position: absolute;
+         top: 0;
+         overflow: hidden;
+         left:0;
+         transition: all 1s linear;
+         
+      }
+      div:hover:before{
+         width: 100%;
+      }
+   </style>
+</head>
+<body>
+   <div data-text="HOLA COMO ESTAS">HOLA COMO ESTAS</div>
+</body>
+</html>

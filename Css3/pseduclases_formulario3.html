@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /* cualquier input que este activado y desactivado   */
+        .primer input:disabled{
+            background: red;
+        }
+        .primer input:enabled{
+            background: yellow;
+        }
+    /* todo input requerido y option que sea desendiente de .segundo hacer       */
+        .segundo input:required{
+            background: green;
+        }
+        .segundo input:optional{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <form class="primer" action="" >
+        <input type="text">
+        <input type="text" disabled>
+        <input type="text">
+    </form>
+    <hr>
+    <h2>segundo formulario</h2>
+    <form class="segundo" action="">
+        <input type="text"required>
+        <input type="text">  
+    </form>
+</body>
+</html>
