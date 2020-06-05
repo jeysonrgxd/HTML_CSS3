@@ -1,12 +1,13 @@
-// esto es codigo de prueba despues veremos como utilizar
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-
-body {
-   font: 100% $font-stack;
-   color: $primary-color;
-}
-
 // importamos archivos scss para poder ubucar mas rrapido nuestro codigo y asi poder tener mas organizado el css y ya no ir buscando es lo 6000 lineas de codigo css sino que boy de frente al archivo scss donde escribi el codigo.
 // no es nesesario poner el .scss
+
+//Librerias, Settings y variables 
+@import './lib/variables.scss';
+
+// Elementos base
 @import './tabla.scss';
+@import './base/botones.scss';
+@import './base/tipografia.scss';
+
+// componentes para reutilizacion
+@import './components/grid.scss'

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/style.scss","../sass/tabla.scss"],"names":[],"mappings":"AAGA;EACG;EACA,OAJa;;;ACDhB;EACG","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/lib/variables.scss","../sass/tabla.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;ACAA;EACG","file":"style.css"}
